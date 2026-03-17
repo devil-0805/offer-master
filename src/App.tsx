@@ -6,6 +6,7 @@ import ResumeAnalysis from './pages/ResumeAnalysis';
 import ResumeOptimize from './pages/ResumeOptimize';
 import MockInterview from './pages/MockInterview';
 import ResumeLibrary from './pages/ResumeLibrary';
+import QuestionBank from './pages/QuestionBank';
 
 type Page = 'home' | 'resume-analysis' | 'resume-optimize' | 'mock-interview' | 'question-bank' | 'offer-compare'
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/resume-optimize" element={<ResumeOptimize />} />
           <Route path="/mock-interview" element={<MockInterview />} />
           <Route path="/resume-library" element={<ResumeLibrary />} />
+          <Route path="/question-bank" element={<QuestionBank />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
